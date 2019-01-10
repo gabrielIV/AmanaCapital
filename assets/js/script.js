@@ -58,7 +58,7 @@ $(document).ready(function() {
     var v = $(val).html();
     $(val).append("<span class='nav-after px-3'>" + v + "</span>");
   });
-  // addNavBar();
+  addNavBar();
   $("body").prepend('<div class="curtain"></div>');
 
   var l = $(".section").length;
