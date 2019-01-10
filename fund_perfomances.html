@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.css"
+    />
+    <link rel="stylesheet" href="assets/css/onepage-scroll.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/css/bootstrap-datepicker.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css"
+    />
+    <title>Amana</title>
+  </head>
+
+  <body class="bg-primary ">
+    <main>
+      <section
+        class="section fund-section primary-bg page-cover fund nav-bar-light"
+      >
+        <nav-mobile></nav-mobile>
+        <nav class="nav-bar-light"></nav>
+        <div class="container text-white pt-5">
+          <h1 class="mb-5 pt-5 text-center fund-title">Fund Historic Prices</h1>
+
+          <!-- <h4 class="pt-5"><b>A. </b></h4> -->
+
+          <div class="row mt pt-5 prices my-auto">
+            <div class="col-md-4">
+              <div class="theme-white">
+                <div class="group b-bar">
+                  <select
+                    name=""
+                    id="fund-name"
+                    class="material-input bg-transparent primary-bg text-white fund-name"
+                  >
+                    <option value="" selected hidden class="primary-bg"
+                      >Fund name</option
+                    >
+
+                    <option value="Amana Balanced" class="primary-bg"
+                      >Amana Balanced Fund</option
+                    >
+
+                    <option value="Amana Growth" class="primary-bg"
+                      >Amana Growth</option
+                    >
+                    <!-- <option value="" class="primary-bg">Item 2</option> -->
+                  </select>
+
+                  <span class="b-bar"></span>
+                  <!-- <label>Your names</label> -->
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="theme-white">
+                <div class="group b-bar">
+                  <!--
+                    <select
+                      name=""
+                      id=""
+                      class="material-input bg-transparent primary-bg text-white"
+                    >
+                      <option value="" selected hidden class="primary-bg"
+                        >From Date</option
+                      >
+                      <option value="" class="primary-bg">Item 1</option>
+                      <option value="" class="primary-bg">Item 2</option>
+                    </select>
+                  -->
+
+                  <input
+                    type="text"
+                    class="material-input bg-transparent primary-bg text-white from"
+                    placeholder="From Date"
+                  />
+
+                  <span class="b-bar"></span>
+                  <!-- <label>Your names</label> -->
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="theme-white">
+                <div class="group b-bar">
+                  <input
+                    name=""
+                    id=""
+                    placeholder="To Date"
+                    class="material-input bg-transparent primary-bg text-white to"
+                  />
+
+                  <span class="b-bar"></span>
+                  <!-- <label>Your names</label> -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="">
+            <button
+              class="btn btn-bg btn-outline-light float-right prices-button"
+            >
+              view prices
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section fund-section page-cover fund bg-gold">
+        <nav class="nav-bar-light"></nav>
+        <div class="container text-white pt-5">
+          <h1 class="mb-5 pt-5 text-center fund-title">
+            Fund historic performance
+          </h1>
+
+          <!-- <h4 class="pt-5"><b>B. Fund historic performance</b></h4> -->
+
+          <div class="row mt-5 pt-5 performance">
+            <div class="col-md-4">
+              <div class="theme-white">
+                <div class="group b-bar">
+                  <select
+                    name=""
+                    id="fund-name"
+                    class="material-input bg-transparent primary-bg text-white fund-name"
+                  >
+                    <option value="" selected hidden class="primary-bg"
+                      >Fund name</option
+                    >
+
+                    <option value="Amana Balanced" class="primary-bg"
+                      >Amana Balanced</option
+                    >
+                    <!-- <option value="" class="primary-bg">Item 2</option> -->
+                  </select>
+
+                  <span class="b-bar"></span>
+                  <!-- <label>Your names</label> -->
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="theme-white">
+                <div class="group b-bar">
+                  <!--
+                    <select
+                      name=""
+                      id=""
+                      class="material-input bg-transparent primary-bg text-white"
+                    >
+                      <option value="" selected hidden class="primary-bg"
+                        >From Date</option
+                      >
+                      <option value="" class="primary-bg">Item 1</option>
+                      <option value="" class="primary-bg">Item 2</option>
+                    </select>
+                  -->
+
+                  <input
+                    type="text"
+                    class="material-input bg-transparent primary-bg text-white from"
+                    placeholder="From Date"
+                  />
+
+                  <span class="b-bar"></span>
+                  <!-- <label>Your names</label> -->
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="theme-white">
+                <div class="group b-bar">
+                  <input
+                    name=""
+                    id=""
+                    placeholder="To Date to"
+                    class="material-input bg-transparent primary-bg text-white to"
+                  />
+
+                  <span class="b-bar"></span>
+                  <!-- <label>Your names</label> -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="">
+            <button
+              class="btn btn-bg btn-outline-light float-right perfomance-button"
+            >
+              view performance
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section fund-section page-cover fund bg-silver">
+        <nav class="nav-bar-light"></nav>
+        <div class="container text-white pt-5">
+          <h1 class="mb-5 pt-5 text-center fund-title">Fund Fact sheets</h1>
+
+          <!-- <h4 class="pt-5"><b>C. Fund Fact sheets</b></h4> -->
+
+          <div class="row mt-5 pt-5">
+            <div class="col-md-4">
+              <div class="theme-white">
+                <div class="group b-bar">
+                  <select
+                    name=""
+                    id="fund-name"
+                    class="material-input bg-transparent primary-bg text-white sheet-fund-name"
+                  >
+                    <option
+                      value="Balanced Fund Fact Sheet"
+                      selected
+                      hidden
+                      class="primary-bg"
+                      >Fund name</option
+                    >
+                    <option value="Balanced Fund Fact Sheet" class="primary-bg"
+                      >Balanced Fund Fact Sheet</option
+                    >
+
+                    <option value="Growth Fund Fact Sheet" class="primary-bg"
+                      >Growth Fund Fact Sheet</option
+                    >
+
+                    <option value="Shilling Fund Fact Sheet" class="primary-bg"
+                      >Shilling Fund Fact Sheet</option
+                    >
+                    <!-- <option value="" class="primary-bg">Item 2</option> -->
+                  </select>
+
+                  <span class="b-bar"></span>
+                  <!-- <label>Your names</label> -->
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="theme-white">
+                <div class="group b-bar">
+                  <!--
+                    <select
+                      name=""
+                      id=""
+                      class="material-input bg-transparent primary-bg text-white"
+                    >
+                      <option value="" selected hidden class="primary-bg"
+                        >From Date</option
+                      >
+                      <option value="" class="primary-bg">Item 1</option>
+                      <option value="" class="primary-bg">Item 2</option>
+                    </select>
+                  -->
+
+                  <select
+                    name=""
+                    id=""
+                    class="material-input bg-transparent primary-bg text-white sheet-year"
+                  >
+                    <option value="" hidden selected>Year</option>
+                    <option class="text-dark" value="18">2018</option>
+                    <option class="text-dark" value="17">2017</option>
+                    <option class="text-dark" value="16">2016</option>
+                  </select>
+
+                  <span class="b-bar"></span>
+                  <!-- <label>Your names</label> -->
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="theme-white">
+                <div class="group b-bar">
+                  <select
+                    name=""
+                    id=""
+                    class="material-input bg-transparent primary-bg text-white to sheet-month"
+                  >
+                    <option value="" hidden selected>Month</option>
+                    <option class="text-dark" value="january">January</option>
+                    <option class="text-dark" value="february">February</option>
+                    <option class="text-dark" value="march">March</option>
+                    <option class="text-dark" value="may">May</option>
+                    <option class="text-dark" value="june">June</option>
+                    <option class="text-dark" value="july">July</option>
+                    <option class="text-dark" value="august">August</option>
+                    <option class="text-dark" value="september"
+                      >September</option
+                    >
+                    <option class="text-dark" value="october">October</option>
+                    <option class="text-dark" value="november">November</option>
+                    <option class="text-dark" value="december">December</option>
+                  </select>
+
+                  <span class="b-bar"></span>
+                  <!-- <label>Your names</label> -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="">
+            <button
+              class="btn btn-bg btn-outline-light float-right fact-sheet-button"
+            >
+              view fact sheet
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="performances-table">
+      <div class="container py-5">
+        <h3 class="mb-5 fund-title">
+          Fund Historic Prices
+          <div class="mod model-2 hambuger-fund active float-right">
+            <div class="menu">
+              <div class="bar bg-dark"></div>
+              <div class="bar"></div>
+              <div class="bar bg-dark"></div>
+            </div>
+          </div>
+        </h3>
+        <table
+          id="example"
+          class="table table-striped table-bordered"
+          style="width:100%"
+        >
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Bid</th>
+              <th>Ask</th>
+            </tr>
+          </thead>
+
+          <tfoot>
+            <tr>
+              <th>Date</th>
+              <th>Bid</th>
+              <th>Ask</th>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/js/jquery.onepage-scroll.min.js"></script>
+    <script src="assets/js/TweenMax.min.js"></script>
+
+    <script src="assets/js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/js/bootstrap-datepicker.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js"></script>
+
+    <script src="assets/js/funds.js"></script>
+  </body>
+</html>

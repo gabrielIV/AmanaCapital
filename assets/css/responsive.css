@@ -1,0 +1,143 @@
+@media (max-width: 768px) {
+  .header-section .row {
+    background-image: url("") !important;
+    /* color: red; */
+    /* background: pink; */
+  }
+
+  .amara-logo {
+    max-width: 250px !important;
+  }
+
+  .home-get-started {
+    transform: scale(0.8);
+  }
+
+  .desktop-nav {
+    display: none;
+  }
+
+  section {
+    background-color: white;
+  }
+
+  .about-img-001 {
+    width: 100% !important;
+    margin-top: 6%;
+    margin: auto !important;
+  }
+
+  .nav-logo {
+    width: 100px !important;
+  }
+  .nav-bar {
+    height: 70px !important;
+  }
+
+  .nav-mobile {
+    background-color: white;
+    z-index: 1 !important;
+  }
+
+  .hambuger {
+    transform: scale(0.7) translateY(-10px);
+  }
+
+  .nav-links {
+    margin-top: 0px !important;
+    transform: scale(0.7);
+  }
+
+  .nav-mobile {
+    /* position: fixed !important ; */
+    top: 0px;
+    z-index: 1000;
+    transition: all 0.5s;
+  }
+
+  .nav-bar .nav-logo {
+    transform: translateY(-10px);
+  }
+
+  .nav-bar b {
+    text-align: center;
+  }
+
+  .background-logo {
+    top: unset !important;
+  }
+
+  .scrollbar {
+    display: none;
+  }
+
+  .menu-panel {
+    overflow-y: scroll;
+  }
+
+  .intro-title {
+    font-size: 40px !important;
+  }
+
+  .nav-bar-light .nav-mobile {
+    background-color: #8a0b0b;
+  }
+
+  .fund-title {
+    font-size: 30px !important;
+  }
+
+  .performances-table {
+    position: absolute;
+    display: none;
+  }
+
+  .ii {
+    z-index: 300;
+  }
+
+  .hambuger-fund {
+    transform: scale(0.5);
+  }
+
+  .nav-mobile {
+    display: block !important;
+  }
+
+  .team-title {
+    font-size: 30px;
+    display: block;
+    margin-bottom: 70px;
+  }
+
+  .contacts-bg {
+    display: none;
+  }
+
+  #team_category {
+    /* position: relative !important; */
+    /* display: block; */
+    top: 100px;
+    left: calc(50vw - 100px);
+  }
+
+  .greet-lg {
+    display: none;
+  }
+  .greet-sm {
+    display: block !important;
+  }
+
+  .coins_large {
+    display: none;
+  }
+
+  .prices-end {
+    padding-left: 26px;
+  }
+
+  .team-pane {
+    width: 100vw !important;
+    position: fixed;
+  }
+}
