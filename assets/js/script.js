@@ -83,6 +83,10 @@ function addNavBar() {
           "</nav>"
       );
       console.log(navMobile);
+
+      $(".navlink").each(function(num, val) {
+        $(val).append('<b class="nav-after px-3">' + $(val).html() + "</b>");
+      });
     }
   });
 }
@@ -98,7 +102,7 @@ $(document).ready(function() {
 var tl = null;
 var humbuger_el;
 
-$(".hambuger").click(function() {
+$(document).on("click", ".hambuger", function() {
   if (tl == null) {
     tl = new TimelineMax();
     tl.set(".menu-panel", { yPercent: 100 })
@@ -133,10 +137,6 @@ $(".hambuger").click(function() {
     }, 200);
     tl.restart();
   }
-});
-
-$(".navlink").each(function(num, val) {
-  $(val).append('<b class="nav-after px-3">' + $(val).html() + "</b>");
 });
 
 $(".curtain").addClass("hidden");
