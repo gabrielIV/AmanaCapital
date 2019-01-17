@@ -724,6 +724,7 @@ main.scaled {
 .media-bg {
   position: absolute !important;
   z-index: 0;
+  object-fit: cover;
 }
 
 .media-button {

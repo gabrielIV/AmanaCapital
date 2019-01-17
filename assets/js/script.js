@@ -171,10 +171,11 @@ if (typeof team) {
       .trim();
 
     $(val).attr("data-target", ".pn-" + ct);
-    ct++;
     $(val).addClass("open-panel-right");
 
     if (tls.indexOf(name) < 0) {
+      ct++;
+
       var img = $(val)
         .find("img")
         .attr("src");
@@ -184,9 +185,11 @@ if (typeof team) {
         .text();
       var desc = $(val)
         .find(".member-description")
-        .text()
-        .trim();
+        .html();
+
       TeamData.push({ img: img, name: name, position: position, desc: desc });
+    } else {
+      $(val).attr("data-target", ".pn-" + tls.indexOf(name));
     }
   });
   var count = 0;
@@ -242,30 +245,64 @@ if (typeof team) {
   $(document).on("click", ".pane-clear", function() {
     tlt.reverse(0);
   });
+
+  $(document).on("change", "#team_category", function() {
+    // alert("ok");
+    var team_category = $(this).val();
+    $(".team").fadeOut(500);
+    setTimeout(function() {
+      $("." + team_category).fadeIn(500);
+    }, 700);
+  });
+
+  var mySwiper = new Swiper(".swiper-container", {
+    speed: 1000,
+    spaceBetween: 100,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev"
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      type: "bullets"
+    },
+    keyboard: {
+      enabled: true,
+      onlyInViewport: false
+    }
+  });
+
+  // var mySwiper2 = new Swiper("#swp2", {
+  //   speed: 1000,
+  //   spaceBetween: 100,
+  //   navigation: {
+  //     nextEl: ".swiper-button-next",
+  //     prevEl: ".swiper-button-prev"
+  //   },
+  //   pagination: {
+  //     el: ".swiper-pagination",
+  //     type: "bullets"
+  //   },
+  //   keyboard: {
+  //     enabled: true,
+  //     onlyInViewport: false
+  //   }
+  // });
+
+  // var ss = new Swiper($(".governance .swiper-pagination"), {
+  //   speed: 1000,
+  //   spaceBetween: 100,
+  //   navigation: {
+  //     nextEl: ".swiper-button-next",
+  //     prevEl: ".swiper-button-prev"
+  //   },
+  //   pagination: {
+  //     el: ".swiper-pagination",
+  //     type: "bullets"
+  //   },
+  //   keyboard: {
+  //     enabled: true,
+  //     onlyInViewport: false
+  //   }
+  // });
 }
-
-$(document).on("change", "#team_category", function() {
-  // alert("ok");
-  var team_category = $(this).val();
-  $(".team").fadeOut(500);
-  setTimeout(function() {
-    $("." + team_category).fadeIn(500);
-  }, 700);
-});
-
-var mySwiper = new Swiper(".swiper-container", {
-  speed: 1000,
-  spaceBetween: 100,
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev"
-  },
-  pagination: {
-    el: ".swiper-pagination",
-    type: "bullets"
-  },
-  keyboard: {
-    enabled: true,
-    onlyInViewport: false
-  }
-});
