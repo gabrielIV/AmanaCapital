@@ -252,24 +252,28 @@ if (typeof team) {
     $(".team").fadeOut(500);
     setTimeout(function() {
       $("." + team_category).fadeIn(500);
-    }, 700);
-  });
 
-  var mySwiper = new Swiper(".swiper-container", {
-    speed: 1000,
-    spaceBetween: 100,
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev"
-    },
-    pagination: {
-      el: ".swiper-pagination",
-      type: "bullets"
-    },
-    keyboard: {
-      enabled: true,
-      onlyInViewport: false
-    }
+      if (team_category == "governance") {
+        setTimeout(function() {
+          new Swiper("#governance", {
+            speed: 1000,
+            spaceBetween: 100,
+            navigation: {
+              nextEl: ".swiper-button-next",
+              prevEl: ".swiper-button-prev"
+            },
+            pagination: {
+              el: ".swiper-pagination",
+              type: "bullets"
+            },
+            keyboard: {
+              enabled: true,
+              onlyInViewport: false
+            }
+          });
+        }, 500);
+      }
+    }, 700);
   });
 
   // var mySwiper2 = new Swiper("#swp2", {
